@@ -122,8 +122,8 @@ const HomePage = ({ isLoggedIn, openAuthModal }) => {
             <div className="max-w-3xl mx-auto text-center  text-blue mb-8">
               <h1 className="text-4xl font-bold mb-4">Move In Hassle-Free – Explore Top PGs Now</h1>
               <p className="text-lg mb-8">
-                {/* Browse through hundreds of verified PGs across the city and find your ideal home away from home. */}
-              </p>
+                {}
+              </p>  
             </div>
             
             <SearchBar className="max-w-3xl mx-auto" />

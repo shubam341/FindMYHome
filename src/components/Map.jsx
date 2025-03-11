@@ -4,7 +4,6 @@ import { FaMapMarkerAlt } from 'react-icons/fa';
 import 'mapbox-gl/dist/mapbox-gl.css';
 
 const MapComponent = ({ pgs, selectedPg, setSelectedPg }) => {
-  // This would normally come from an environment variable
   const MAPBOX_TOKEN = 'pk.eyJ1IjoiZXhhbXBsZXVzZXIiLCJhIjoiY2xnNXNlaTJlMDc2eTNkcGx6NHdnczhnbiJ9.example-token';
 console.log("PGs data:", pgs);
 
@@ -12,7 +11,7 @@ console.log("PGs data:", pgs);
     <div className="h-full w-full rounded-lg overflow-hidden">
       <Map
         initialViewState={{
-          latitude: 28.6139,  // Default to Delhi, India
+          latitude: 28.6139, 
           longitude: 77.2090,
           zoom: 12
         }}
