@@ -10,7 +10,7 @@ import UserProfile from './pages/UserProfile';
 import OwnerDashboard from './pages/OwnerDashboard';
 import BlogPage from './pages/BlogPage';
 
-// Components
+
 import AuthModal from './components/AuthModal';
 
 function App() {
@@ -42,7 +42,7 @@ function App() {
         <Route path="/blogs" element={<BlogPage isLoggedIn={isLoggedIn} openAuthModal={openAuthModal} />} />
       </Routes>
       
-      {/* Auth Modal - Conditional Rendering */}
+    
       {isAuthModalOpen && (
         <AuthModal 
           isOpen={isAuthModalOpen} 

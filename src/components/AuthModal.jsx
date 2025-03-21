@@ -20,7 +20,7 @@ const AuthModal = ({ isOpen, onClose, mode, userType, onLogin, onSwitchMode }) =
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    // In a real app, you would validate and send data to backend
+ 
     console.log('Form submitted:', formData);
     onLogin();
   };

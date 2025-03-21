@@ -212,7 +212,7 @@ const PgDetails = () => {
         </div>
       </div>
 
-      {/* Booking Modal */}
+   
       {isModalOpen && (
         <BookingModal pg={pg} onClose={() => setIsModalOpen(false)} /> // Pass PG details and close handler
       )}

@@ -25,7 +25,7 @@ const BookingModal = ({ isOpen, onClose, pg }) => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    // In a real app, you would process payment and booking
+   
     alert('Booking successful!');
     onClose();
   };

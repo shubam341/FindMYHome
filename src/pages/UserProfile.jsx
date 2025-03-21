@@ -58,7 +58,7 @@ const UserProfile = ({ isLoggedIn }) => {
   const [isEditing, setIsEditing] = useState(false);
   const [userInfo, setUserInfo] = useState(userData);
   
-  // Redirect if not logged in
+
   if (!isLoggedIn) {
     return <Navigate to="/" />;
   }
@@ -72,7 +72,8 @@ const UserProfile = ({ isLoggedIn }) => {
   
   const handleSubmit = (e) => {
     e.preventDefault();
-    // In a real app, you would update the user profile in the backend
+    
+    
     setIsEditing(false);
   };
 

@@ -6,7 +6,7 @@ const Footer = () => {
     <footer className="bg-gray-800 text-white pt-12 pb-6">
       <div className="container mx-auto px-4">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-          {/* About Section */}
+         
           <div>
             <h3 className="text-xl font-semibold mb-4">About PG Finder</h3>
             <p className="text-gray-300 mb-4">
@@ -20,7 +20,7 @@ const Footer = () => {
             </div>
           </div>
           
-          {/* Quick Links */}
+          
           <div>
             <h3 className="text-xl font-semibold mb-4">Quick Links</h3>
             <ul className="space-y-2">

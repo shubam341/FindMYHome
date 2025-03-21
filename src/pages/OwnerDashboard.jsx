@@ -28,7 +28,7 @@ const propertiesData = [
   }
 ];
 
-// Sample bookings data
+
 const bookingsData = [
   {
     id: 1,
@@ -85,7 +85,7 @@ const OwnerDashboard = ({ isLoggedIn }) => {
   const [activeTab, setActiveTab] = useState('dashboard');
   const [showNotifications, setShowNotifications] = useState(false);
   
-  // Redirect if not logged in
+
   if (!isLoggedIn) {
     return <Navigate to="/" />;
   }
@@ -192,7 +192,7 @@ const OwnerDashboard = ({ isLoggedIn }) => {
             <div className="p-6">
               {activeTab === 'dashboard' && (
                 <div>
-                  {/* Stats Cards */}
+               
                   <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-8">
                     <div className="bg-white border border-gray-200 rounded-lg p-6 shadow-sm">
                       <div className="flex items-center">
@@ -243,7 +243,7 @@ const OwnerDashboard = ({ isLoggedIn }) => {
                     </div>
                   </div>
                   
-                  {/* Recent Bookings */}
+              
                   <div className="mb-8">
                     <div className="flex justify-between items-center mb-4">
                       <h2 className="text-lg font-semibold">Recent Bookings</h2>
@@ -307,8 +307,7 @@ const OwnerDashboard = ({ isLoggedIn }) => {
                       </table>
                     </div>
                   </div>
-                  
-                  {/* Properties Overview */}
+                
                   <div>
                     <div className="flex justify-between items-center mb-4">
                       <h2 className="text-lg font-semibold">Properties Overview</h2>
@@ -421,7 +420,7 @@ const OwnerDashboard = ({ isLoggedIn }) => {
                       </div>
                     ))}
                     
-                    {/* Add New Property Card */}
+                
                     <div className="border border-dashed border-gray-300 rounded-lg flex items-center justify-center h-80">
                       <div className="text-center p-6">
                         <div className="bg-gray-100 rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4">

@@ -82,7 +82,7 @@ const BlogPage = ({ isLoggedIn, openAuthModal }) => {
   const [searchQuery, setSearchQuery] = React.useState('');
   const [selectedCategory, setSelectedCategory] = React.useState('All');
   
-  // Filter posts based on search query and category
+
   const filteredPosts = blogPosts.filter(post => {
     const matchesSearch = post.title.toLowerCase().includes(searchQuery.toLowerCase()) || 
                           post.excerpt.toLowerCase().includes(searchQuery.toLowerCase());
@@ -100,7 +100,7 @@ const BlogPage = ({ isLoggedIn, openAuthModal }) => {
         <div className="container mx-auto px-4">
        
 
-             {/* Hero Section */}
+            
       <section className="relative py-20 bg-indigo-500">
         <div className="absolute inset-0 bg-cover bg-center opacity-20" style={{ backgroundImage: "url('https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80')" }}></div>
         <div className="relative container mx-auto px-4 text-center">
@@ -144,7 +144,7 @@ const BlogPage = ({ isLoggedIn, openAuthModal }) => {
             </div>
           </div>
           
-          {/* Featured Post */}
+    
           {filteredPosts.length > 0 && (
             <div className="mb-12">
               <div className="bg-white rounded-lg shadow-md overflow-hidden">
@@ -188,7 +188,7 @@ const BlogPage = ({ isLoggedIn, openAuthModal }) => {
             </div>
           )}
           
-          {/* Blog Posts Grid */}
+         
           {filteredPosts.length > 1 ? (
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
               {filteredPosts.slice(1).map(post => (
@@ -240,8 +240,7 @@ const BlogPage = ({ isLoggedIn, openAuthModal }) => {
               </button>
             </div>
           ) : null}
-          
-          {/* Newsletter Subscription */}
+      
           <div className="bg-primary-50 rounded-lg shadow-md p-8 mt-12">
             <div className="text-center max-w-2xl mx-auto">
               <h2 className="text-2xl font-bold text-gray-800 mb-2">Subscribe to Our Newsletter</h2>
